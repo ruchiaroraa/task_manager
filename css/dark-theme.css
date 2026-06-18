@@ -1,0 +1,29 @@
+html[data-theme="dark"] body {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e293b
+  );
+  color: white;
+}
+
+html[data-theme="dark"] .task-card,
+html[data-theme="dark"] .stats div,
+html[data-theme="dark"] .card {
+  background: #1e293b;
+  color: white;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] select {
+  background: #334155;
+  color: white;
+}
+
+html[data-theme="dark"] .task-form-section,
+html[data-theme="dark"] .filters,
+html[data-theme="dark"] .stats,
+html[data-theme="dark"] .propagation,
+html[data-theme="dark"] .pipeline-section {
+  background: rgba(255,255,255,0.08);
+}

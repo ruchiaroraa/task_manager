@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 30px;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.task-form-section,
+.filters,
+.stats,
+.propagation,
+.pipeline-section {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#themeToggle {
+  background: white;
+}
+
+form button {
+  background: #4f46e5;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#clearAll {
+  background: #ef4444;
+  color: white;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 15px;
+}
+
+.stats div {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#taskContainer {
+  display: grid;
+  gap: 15px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+}
+
+.task-card h3 {
+  margin-bottom: 8px;
+}
+
+.task-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.task-card button {
+  margin-right: 10px;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+}
+
+.complete-btn {
+  background: #10b981;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.property-demo {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.25);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.propagation h2,
+.pipeline-section h2 {
+  margin-bottom: 15px;
+}
+
+#grandparent {
+  padding: 40px;
+  background: #6366f1;
+  border-radius: 15px;
+  color: white;
+}
+
+#parent {
+  padding: 30px;
+  background: #818cf8;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+#childBtn {
+  margin-top: 15px;
+  background: white;
+  color: black;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  min-width: 180px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 30px;
+  color: white;
+  align-self: center;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.property-demo h3 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}
