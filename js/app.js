@@ -24,24 +24,6 @@ document.getElementById("attributeValue");
 
 
 
-propertyValue.textContent =
-`Property: ${input.value}`;
-
-attributeValue.textContent =
-`Attribute: ${input.getAttribute("value")}`;
-
-input.addEventListener("input",()=>{
-
-propertyValue.textContent =
-`Property: ${input.value}`;
-
-attributeValue.textContent =
-`Attribute: ${input.getAttribute("value")}`;
-
-});
-
-
-
 document.addEventListener(
 "DOMContentLoaded",
 loadStoredTasks
